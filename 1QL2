@@ -1,0 +1,14 @@
+def mpc(x):
+    if not isinstance(x, (int)):
+        raise TypeError("O parâmetro deve ser um número")
+    y = x * 100
+    return (y)
+
+try:   
+    x = int(input('digite o tamanho em metros: '))    
+    res = mpc(x)
+    print(res)
+except ValueError:
+    print("O valor inserido não é um número válido.")
+except TypeError as e:
+    print(e)
