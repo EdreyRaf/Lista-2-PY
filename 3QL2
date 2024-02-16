@@ -1,0 +1,10 @@
+x = float(input('digite o valor da sua hora salárial: '))    
+y = float(input('digite quantas horas vôce trabalha no mês: '))    
+total = x * y
+print(f'o valor bruto foi {total}')
+inss = total * 0.08
+print(f'o valor pago ao inss foi {inss}')
+imp = total * 0.11
+print(f'o valor pago ao imposto de renda foi {imp}')
+liquido = total - inss - imp
+print(f'o valor liquido é {liquido}')
