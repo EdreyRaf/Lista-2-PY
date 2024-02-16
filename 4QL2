@@ -1,0 +1,10 @@
+def genero (x):
+    if x == 'F':
+        return 'FEMININO'
+    elif x == 'M':
+        return 'MASCULINO'
+    else:
+        return 'INVALIDO'
+    
+x = str(input('Digite uma letra: '))
+print(genero(x))
