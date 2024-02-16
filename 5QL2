@@ -1,0 +1,15 @@
+def ordenar_numeros(num1, num2, num3):
+    if not all(isinstance(num, (int, float)) for num in [num1, num2, num3]):
+        raise TypeError("Erro nos parametros")
+    
+    ord = sorted([num1, num2, num3])
+    return ord
+
+try:
+    a = int(input('digite um número: '))
+    b = int(input('digite uma segunda número: '))
+    c = int(input('digite uma terceira número: '))
+
+    print(ord(a, b, c))
+except TypeError as e:
+    print("Erro:", e)
